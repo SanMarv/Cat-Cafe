@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cat Cafe</title>
+        <script src="scripts/animations.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body class="main">
+        <nav class="Nav-bar">
+            <a href="/" class="nav-logo">
+                <svg xmlns="http://w3.org" viewBox="0 0 400 400">
+                    <text x="10" y="260" font-family="Arial, sans-serif" font-size="100">コーヒー</text>
+                </svg>
+            </a>
+
+            <ul>
+                <a href="#description">
+                    <li class="Nav-Button">Home</li>
+                </a>
+                <a href="#m-title">
+                    <li class="Nav-Button">Menu</li>
+                </a>
+                <a href="#cats">
+                    <li class="Nav-Button">Adoptions</li>
+                </a>
+            </ul>
+        </nav>
+        <section>
+            <div class="description" id="description">
+                <img src="/assets/Latte_Art_of_cute_cat.jpg" alt="" class="description-img">
+                <div class="description-text">
+                    <h1 class="description-title">Have fun!!</h1>
+                    <p>In our cat coffee you can have fun.
+                        Here you will be able to meet a lot
+                        of new cats, and you maybe find a new
+                        partner. Gives us a try.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="Menu" id="menu">
+                <h1 class="Menu-title" id="m-title">Menu</h1>
+                <nav class="nav-menu">
+                    <button class="Nav-Button" onclick="fadeMenu('mon')">Mon</button>
+                    <button class="Nav-Button" onclick="fadeMenu('tue')">Tue</button>
+                    <button class="Nav-Button" onclick="fadeMenu('wed')">Wed</button>
+                    <button class="Nav-Button" onclick="fadeMenu('thr')">Thr</button>
+                    <button class="Nav-Button" onclick="fadeMenu('fri')">Fri</button>
+                    <button class="Nav-Button" onclick="fadeMenu('sat')">Sat</button>
+                    <button class="Nav-Button" onclick="fadeMenu('sun')">Sun</button>
+                </nav>
+                <div class="Menu-opts">
+                    <div>
+                        <ul>
+                            <li class="item">Curry</li>
+                            <li class="item">Katsu</li>
+                            <li class="item">Manju</li>
+                            <li class="item">Lemonade</li>
+                            <li class="item">Caramel Coffee</li>
+                            <li class="item">Chai tea</li>
+                        </ul>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKoBLcdcLGpAgy82lcTNXdrOV6s3X7bwVR7A&s" class="menu-img">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="kitties" id="cats">
+                <div class="slide-container">
+                    <div class="slide fade">
+                        <img src="/assets/cat-enjoys-breakfast.jpg" style="width: 100%;">
+                    </div>
+                    <div class="slide fade">
+                        <img src="/assets/cat-with-coffee-relaxing-home.jpg" style="width: 100%;">
+                    </div>
+                    <div class="slide fade">
+                        <img src="/assets/selective-focus-closeup-shot-gray-furry-tabby-cat-sitting-wooden-chair.jpg" style="width: 100%;">
+                    </div>
+                    <div class="slide fade">
+                        <img src="/assets/daga_roszkowska-cat-3059075_1920.jpg" style="width: 100%;">
+                    </div>
+                    <div class="slide fade">
+                        <img src="/assets/istockphoto-1325997570-2048x2048.jpg" style="width: 100%;">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="cat-info">
+                    <h1 class="cat-name" id="c-name">Luna</h1>
+                    <p class="cat-desc" id="c-desc">Age: 2 years <br> <br>Personality: Playful and curious. Luna loves chasing toys, exploring every corner of the house, and climbing to high places. She is very affectionate once she feels comfortable.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+    <footer>
+        <p class="copyright">© 2026 Return. Todos los derechos reservados.</p>
+    </footer>
+</html>
